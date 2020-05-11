@@ -708,3 +708,66 @@ body {
     max-width: 100%;
     border-radius: 20px;
 }
+
+
+/* ---------------------------------------------------------------- */
+
+
+
+.container-taller {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 100px);
+}
+
+.container-taller .titulo {
+    grid-column: 3/6;
+    grid-row: 1/2;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-taller .titulo h1 {
+    color: var(--red);
+    font-family: 'Poppins';
+    font-size: 40px;
+}
+
+.container-taller .galeria {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: relative;
+    top: 20px;
+}
+
+.container-taller .galeria .columns {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.container-taller .galeria .columns .foto-01 {
+    grid-column: 2/4;
+    position: relative;
+    right: 20px;
+}
+
+.container-taller .galeria .columns .foto-02 {
+    grid-column: 4/6;
+}
+
+.container-taller .galeria .columns .foto-03 {
+    grid-column: 6/8;
+    position: relative;
+    left: 20px;
+}
+
+
+.container-taller .galeria .columns .foto-01 img,
+.container-taller .galeria .columns .foto-02 img,
+.container-taller .galeria .columns .foto-03 img {
+    max-width: 100%;
+    border-radius: 20px;
+}
