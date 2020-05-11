@@ -1,0 +1,710 @@
+@import 'https://fonts.googleapis.com/css2?family=Poppins&display=swap';
+
+:root {
+    --red: #FF0000;
+    --gray: #9B9B9B;
+    --lightgray: #E1E1E1;
+    --darkgray: #6D6D6D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--lightgray);
+}
+
+.linea-roja hr {
+    border: 2px solid var(--red);
+}
+
+
+.container-menu {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(1, 85px);
+    background-color: var(--red);
+}
+
+.container-menu .logo {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+}
+
+.container-menu .logo .imagen {
+    grid-column: 1/2;
+    position: relative;
+    top: 10px;
+    left: 40px;
+    z-index: 3;
+}
+
+.container-menu .logo .texto {
+    grid-column: 2/-1;
+    position: relative;
+    top: 7px;
+    left: 60px;
+}
+
+.container-menu .logo .imagen img {
+    max-width: 100%;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+.container-menu .logo .texto h1 {
+    font-family: 'Poppins';
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.container-menu .menu {
+    grid-column: 4/8;
+    position: relative;
+    top: 30px;
+}
+
+.container-menu .menu li {
+    display: inline;
+    margin: 10px;
+}
+
+.container-menu .menu li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 17px;
+}
+
+
+
+
+
+.container-carousel {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    z-index: 2;
+}
+
+.container-carousel .slide-01,
+.container-carousel .slide-02,
+.container-carousel .slide-03 {
+    grid-column: 1/-1;
+}
+
+.container-carousel .slide-01 .texto,
+.container-carousel .slide-02 .texto,
+.container-carousel .slide-03 .texto {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+}   
+
+.container-carousel .slide-01 .imagen img ,
+.container-carousel .slide-02 .imagen img ,
+.container-carousel .slide-03 .imagen img  {
+    max-width: 100%;
+    opacity: .8;
+}
+
+.container-carousel .slide-01 .texto h1,
+.container-carousel .slide-02 .texto h1,
+.container-carousel .slide-03 .texto h1 {
+    font-family: 'Poppins';
+    color: var(--red);
+    font-size: 80px;
+    text-shadow: 2px 5px black;
+}   
+
+.container-carousel .slide-01 .texto p,
+.container-carousel .slide-02 .texto p,
+.container-carousel .slide-03 .texto p {
+    font-family: 'Poppins';
+    color: var(--gray);
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}   
+
+
+
+
+
+.container-nosotros {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 90px);
+}
+
+.container-nosotros .titulo {
+    grid-column: 3/6;
+    grid-row: 1/2;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-nosotros .texto {
+    grid-column: 2/7;
+    grid-row: 2/3;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.container-nosotros .titulo h1 {
+    font-family: 'Poppins';
+    color: var(--red);
+    font-size: 40px;
+}
+
+.container-nosotros .texto p {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: var(--darkgray);
+}
+
+.container-nosotros .logo {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: relative;
+    top: 50px;
+}
+
+.container-nosotros .logo .imagen {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    position: relative;
+    left: 230px;
+}
+
+.container-nosotros .logo .texto {
+    grid-column: 4/7;
+    grid-row: 1/2;
+    position: relative;
+    right: 150px;
+    top: 20px;
+}
+
+.container-nosotros .logo .imagen img {
+    max-width: 100%;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+.container-nosotros .logo .texto h1 {
+    font-family: 'Poppins';
+    color: var(--darkgray);
+    font-size: 20px;
+}
+
+
+
+
+
+.container-clientes {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 90px);
+    background-color: white;
+}
+
+.container-clientes .titulo {
+    grid-column: 3/6;
+    grid-row: 1/2;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-clientes .texto {
+    grid-column: 2/7;
+    grid-row: 2/3;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.container-clientes .titulo h1 {
+    font-family: 'Poppins';
+    font-size: 40px;
+    color: var(--red);
+
+}
+
+.container-clientes .texto p {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: var(--darkgray);
+}
+
+
+/* ------------------------------------------------- */
+.container-marcos {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 120px);
+}
+
+.container-marcos .titulo {
+    grid-column: 3/6;
+    grid-row: 1/2;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-marcos .galeria {
+    grid-column: 1/9;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.container-marcos .galeria .columns {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.container-marcos .galeria .imagen-01 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    position: relative;
+    right: 30px;
+}
+
+.container-marcos .galeria .imagen-02 {
+    grid-column: 4/6;
+    position: relative;
+    right: 10px;
+}
+
+.container-marcos .galeria .imagen-03 {
+    grid-column: 6/8;
+    position: relative;
+    left: 10px;
+}
+
+.container-marcos .galeria .imagen-04 {
+    grid-column: 8/10;
+    position: relative;
+    left: 30px;
+}
+
+.container-marcos .titulo h1 {
+    font-size: 40px;
+    font-family: 'Poppins';
+    color: var(--red);
+}
+
+.container-marcos .galeria .imagen-01 img,
+.container-marcos .galeria .imagen-02 img,
+.container-marcos .galeria .imagen-03 img,
+.container-marcos .galeria .imagen-04 img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* ------------------------------------------------- */
+
+.container-molduras {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 120px);
+}
+
+.container-molduras .titulo {
+    grid-column: 3/6;
+    grid-row: 1/2;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-molduras .titulo h1 {
+    color: var(--red);
+    font-family: 'Poppins';
+    font-size: 40px;
+}
+
+.container-molduras .galeria {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.container-molduras .galeria .columns {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+}
+
+.container-molduras .galeria .columns .imagen-01 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    position: relative;
+    left: 20px;
+}
+
+.container-molduras .galeria .columns .imagen-02 {
+    grid-column: 4/6;
+    grid-row: 1/2;
+    position: relative;
+    left: 40px;
+}
+
+.container-molduras .galeria .columns .imagen-03 {
+    grid-column: 6/8;
+    grid-row: 1/2;
+    position: relative;
+    left: 60px;
+}
+
+.container-molduras .galeria .columns .imagen-04 {
+    grid-column: 8/10;
+    grid-row: 1/2;
+    position: relative;
+    left: 80px;
+}
+
+.container-molduras .galeria .columns .imagen-05 {
+    grid-column: 10/12;
+    grid-row: 1/2;
+    position: relative;
+    left: 100px;
+}
+
+.container-molduras .galeria .columns .imagen-01 img,
+.container-molduras .galeria .columns .imagen-02 img,
+.container-molduras .galeria .columns .imagen-03 img,
+.container-molduras .galeria .columns .imagen-04 img,
+.container-molduras .galeria .columns .imagen-05 img {
+    max-width: 100%;
+    border-radius: 20px;
+    border: 4px solid black;
+    border: 2px solid var(--darkgray);
+}
+
+/* ---------------------------------------------------- */
+
+
+
+
+
+
+.container-trabajos {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 100px);
+}
+
+.container-trabajos .titulo {
+    grid-column: 3/6;
+    grid-row: 1/2;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container-trabajos .titulo h1 {
+    color: var(--red);
+    font-family: 'Poppins';
+    font-size: 40px;
+}
+
+.container-trabajos .filtro {
+    grid-column: 2/7;
+    grid-row: 2/3;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.container-trabajos .filtro a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--red);
+    font-size: 17px;
+    font-family: 'Poppins';
+    border: .1px solid var(--red);
+    border-radius: 10px;
+    outline: none;
+}
+
+.container-trabajos .contenido {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: relative;
+    top: 30px;
+}
+
+.container-trabajos .contenido .crewuel {
+    grid-column: 1/-1;
+}
+
+.container-trabajos .contenido .crewuel .titulo {
+    grid-column: 3/6;
+    position: relative;
+    top: 0px;
+}
+
+.container-trabajos .contenido .crewuel .galeria {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: relative;
+    top: 20px;
+}
+
+.container-trabajos .contenido .crewuel .galeria .columns {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.container-trabajos .contenido .crewuel .galeria .columns .imagen-01 {
+    grid-column: 2/3;
+    position: relative;
+    right: 40px;
+}
+
+.container-trabajos .contenido .crewuel .galeria .columns .imagen-02 {
+    grid-column: 3/4;
+    position: relative;
+    right: 20px;
+}
+
+.container-trabajos .contenido .crewuel .galeria .columns .imagen-03 {
+    grid-column: 4/5;
+}
+
+.container-trabajos .contenido .crewuel .galeria .columns .imagen-04 {
+    grid-column: 5/6;
+    position: relative;
+    left: 20px;
+}
+
+.container-trabajos .contenido .crewuel .galeria .columns .imagen-01 img,
+.container-trabajos .contenido .crewuel .galeria .columns .imagen-02 img,
+.container-trabajos .contenido .crewuel .galeria .columns .imagen-03 img,
+.container-trabajos .contenido .crewuel .galeria .columns .imagen-04 img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+
+.container-trabajos .contenido .oleo {
+    grid-column: 1/-1;
+}
+
+.container-trabajos .contenido .oleo .titulo {
+    grid-column: 3/6;
+    position: relative;
+    top: 0px;
+}
+
+.container-trabajos .contenido .oleo .galeria {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: relative;
+    top: 20px;
+}
+
+.container-trabajos .contenido .oleo .galeria .columns {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.container-trabajos .contenido .oleo .galeria .columns .imagen-01 {
+    grid-column: 2/4;
+    position: relative;
+    right: 40px;
+}
+
+.container-trabajos .contenido .oleo .galeria .columns .imagen-02 {
+    grid-column: 4/6;
+    position: relative;
+    right: 20px;
+}
+
+.container-trabajos .contenido .oleo .galeria .columns .imagen-03 {
+    grid-column: 6/8;
+}
+
+.container-trabajos .contenido .oleo .galeria .columns .imagen-01 img,
+.container-trabajos .contenido .oleo .galeria .columns .imagen-02 img,
+.container-trabajos .contenido .oleo .galeria .columns .imagen-03 img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+
+.container-trabajos .contenido .caja-decorativa {
+    grid-column: 1/-1;
+}
+
+.container-trabajos .contenido .caja-decorativa .titulo {
+    grid-column: 3/6;
+    position: relative;
+    top: 0px;
+}
+
+.container-trabajos .contenido .caja-decorativa .galeria {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: relative;
+    top: 20px;
+}
+
+.container-trabajos .contenido .caja-decorativa .galeria .columns {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.container-trabajos .contenido .caja-decorativa .galeria .columns .imagen-01 {
+    grid-column: 2/3;
+    position: relative;
+    right: 40px;
+}
+
+.container-trabajos .contenido .caja-decorativa .galeria .columns .imagen-02 {
+    grid-column: 3/4;
+    position: relative;
+    right: 20px;
+}
+
+.container-trabajos .contenido .caja-decorativa .galeria .columns .imagen-03 {
+    grid-column: 4/5;
+}
+
+.container-trabajos .contenido .caja-decorativa .galeria .columns .imagen-04 {
+    grid-column: 5/6;
+    position: relative;
+    left: 20px;
+}
+
+.container-trabajos .contenido .caja-decorativa .galeria .columns .imagen-01 img,
+.container-trabajos .contenido .caja-decorativa .galeria .columns .imagen-02 img,
+.container-trabajos .contenido .caja-decorativa .galeria .columns .imagen-03 img,
+.container-trabajos .contenido .caja-decorativa .galeria .columns .imagen-04 img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+
+
+.container-trabajos .contenido .retratos {
+    grid-column: 1/-1;
+}
+
+.container-trabajos .contenido .retratos .titulo {
+    grid-column: 3/6;
+    position: relative;
+    top: 0px;
+}
+
+.container-trabajos .contenido .retratos .galeria {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: relative;
+    top: 20px;
+}
+
+.container-trabajos .contenido .retratos .galeria .columns {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.container-trabajos .contenido .retratos .galeria .columns .imagen-01 {
+    grid-column: 2/3;
+    position: relative;
+    right: 40px;
+}
+
+.container-trabajos .contenido .retratos .galeria .columns .imagen-02 {
+    grid-column: 3/4;
+    position: relative;
+    right: 20px;
+}
+
+.container-trabajos .contenido .retratos .galeria .columns .imagen-03 {
+    grid-column: 4/5;
+}
+
+.container-trabajos .contenido .retratos .galeria .columns .imagen-04 {
+    grid-column: 5/6;
+    position: relative;
+    left: 20px;
+}
+
+.container-trabajos .contenido .retratos .galeria .columns .imagen-01 img,
+.container-trabajos .contenido .retratos .galeria .columns .imagen-02 img,
+.container-trabajos .contenido .retratos .galeria .columns .imagen-03 img,
+.container-trabajos .contenido .retratos .galeria .columns .imagen-04 img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+
+
+
+
+.container-trabajos .contenido .cuadros {
+    grid-column: 1/-1;
+}
+
+.container-trabajos .contenido .cuadros .titulo {
+    grid-column: 3/6;
+    position: relative;
+    top: 0px;
+}
+
+.container-trabajos .contenido .cuadros .galeria {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: relative;
+    top: 20px;
+}
+
+.container-trabajos .contenido .cuadros .galeria .columns {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.container-trabajos .contenido .cuadros .galeria .columns .imagen-01 {
+    grid-column: 2/4;
+    position: relative;
+    right: 40px;
+}
+
+.container-trabajos .contenido .cuadros .galeria .columns .imagen-02 {
+    grid-column: 4/6;
+    position: relative;
+    right: 20px;
+}
+
+.container-trabajos .contenido .cuadros .galeria .columns .imagen-03 {
+    grid-column: 6/8;
+}
+
+.container-trabajos .contenido .cuadros .galeria .columns .imagen-01 img,
+.container-trabajos .contenido .cuadros .galeria .columns .imagen-02 img,
+.container-trabajos .contenido .cuadros .galeria .columns .imagen-03 img {
+    max-width: 100%;
+    border-radius: 20px;
+}
