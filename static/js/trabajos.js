@@ -1,60 +1,51 @@
 $(document).ready(function (){
-    $('.container-trabajos .contenido .oleo').addClass('remove');
-    $('.container-trabajos .contenido .caja-decorativa').addClass('remove');
-    $('.container-trabajos .contenido .retratos').addClass('remove');
-    $('.container-trabajos .contenido .cuadros').addClass('remove');
-
+    //$('.container-trabajos .contenido .crewuel').css({'display':'none'});
+    $('.container-trabajos .contenido .oleo').css({'display':'none'});
+    $('.container-trabajos .contenido .caja-decorativa').css({'display':'none'});
+    $('.container-trabajos .contenido .retratos').css({'display':'none'});
+    $('.container-trabajos .contenido .cuadros').css({'display':'none'});
     document.getElementById('crewuel').onclick = function (){
-        $('.container-trabajos .contenido .crewuel').removeClass('remove');
+        $('.container-trabajos .contenido .crewuel').css({'display':'grid'});
 
-        $('.container-trabajos .contenido .oleo').addClass('remove');
-        $('.container-trabajos .contenido .caja-decorativa').addClass('remove');
-        $('.container-trabajos .contenido .retratos').addClass('remove');
-        $('.container-trabajos .contenido .cuadros').addClass('remove');
-
-        $('.container-trabajos').css({'grid-template-rows':'repeat(13, 100px)'});
+        $('.container-trabajos .contenido .oleo').css({'display':'none'});
+        $('.container-trabajos .contenido .caja-decorativa').css({'display':'none'});
+        $('.container-trabajos .contenido .retratos').css({'display':'none'});
+        $('.container-trabajos .contenido .cuadros').css({'display':'none'});
     }
 
     document.getElementById('oleo').onclick = function (){
-        $('.container-trabajos .contenido .oleo').removeClass('remove');
+        $('.container-trabajos .contenido .oleo').css({'display':'grid'});
 
-        $('.container-trabajos .contenido .crewuel').addClass('remove');
-        $('.container-trabajos .contenido .caja-decorativa').addClass('remove');
-        $('.container-trabajos .contenido .retratos').addClass('remove');
-        $('.container-trabajos .contenido .cuadros').addClass('remove');
-
-        $('.container-trabajos').css({'grid-template-rows':'repeat(15, 87px)'});
+        $('.container-trabajos .contenido .crewuel').css({'display':'none'});
+        $('.container-trabajos .contenido .caja-decorativa').css({'display':'none'});
+        $('.container-trabajos .contenido .retratos').css({'display':'none'});
+        $('.container-trabajos .contenido .cuadros').css({'display':'none'});
     }
 
     document.getElementById('cajas').onclick = function (){
-        $('.container-trabajos .contenido .caja-decorativa').removeClass('remove');
+        $('.container-trabajos .contenido .caja-decorativa').css({'display':'grid'});
 
-        $('.container-trabajos .contenido .crewuel').addClass('remove');
-        $('.container-trabajos .contenido .oleo').addClass('remove');
-        $('.container-trabajos .contenido .retratos').addClass('remove');
-        $('.container-trabajos .contenido .cuadros').addClass('remove');
-        $('.container-trabajos').css({'grid-template-rows':'repeat(17, 98px)'});
+        $('.container-trabajos .contenido .crewuel').css({'display':'none'});
+        $('.container-trabajos .contenido .oleo').css({'display':'none'});
+        $('.container-trabajos .contenido .retratos').css({'display':'none'});
+        $('.container-trabajos .contenido .cuadros').css({'display':'none'});
     }
 
     document.getElementById('retratos').onclick = function (){
-        $('.container-trabajos .contenido .retratos').removeClass('remove');
+        $('.container-trabajos .contenido .retratos').css({'display':'grid'});
 
-        $('.container-trabajos .contenido .crewuel').addClass('remove');
-        $('.container-trabajos .contenido .oleo').addClass('remove');
-        $('.container-trabajos .contenido .caja-decorativa').addClass('remove');
-        $('.container-trabajos .contenido .cuadros').addClass('remove');
-
-        $('.container-trabajos').css({'grid-template-rows':'repeat(16, 96px)'});
+        $('.container-trabajos .contenido .crewuel').css({'display':'none'});
+        $('.container-trabajos .contenido .oleo').css({'display':'none'});
+        $('.container-trabajos .contenido .caja-decorativa').css({'display':'none'});
+        $('.container-trabajos .contenido .cuadros').css({'display':'none'});
     }
 
     document.getElementById('cuadros').onclick = function (){
-        $('.container-trabajos .contenido .cuadros').removeClass('remove');
+        $('.container-trabajos .contenido .cuadros').css({'display':'grid'});
 
-        $('.container-trabajos .contenido .crewuel').addClass('remove');
-        $('.container-trabajos .contenido .oleo').addClass('remove');
-        $('.container-trabajos .contenido .caja-decorativa').addClass('remove');
-        $('.container-trabajos .contenido .retratos').addClass('remove');
-
-        $('.container-trabajos').css({'grid-template-rows':'repeat(18, 101px)'});
+        $('.container-trabajos .contenido .crewuel').css({'display':'none'});
+        $('.container-trabajos .contenido .oleo').css({'display':'none'});
+        $('.container-trabajos .contenido .caja-decorativa').css({'display':'none'});
+        $('.container-trabajos .contenido .retratos').css({'display':'none'});
     }
 });
