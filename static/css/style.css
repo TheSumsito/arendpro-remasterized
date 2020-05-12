@@ -5,6 +5,7 @@
     --gray: #9B9B9B;
     --lightgray: #E1E1E1;
     --darkgray: #6D6D6D;
+    --footer: #C8B9B9;
 }
 
 * {
@@ -58,7 +59,6 @@ body {
 .container-menu .logo .texto h1 {
     font-family: 'Poppins';
     color: white;
-    text-shadow: 2px 2px black;
 }
 
 .container-menu .menu {
@@ -77,6 +77,54 @@ body {
     color: white;
     font-family: 'Poppins';
     font-size: 17px;
+}
+
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 70px);
+    background-color: var(--footer);
+}
+
+.footer .contacto {
+    grid-column: 2/4;
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+
+.footer .direccion {
+    grid-column: 4/6;
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+
+.footer .rr-ss {
+    grid-column: 6/8;
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+
+.footer .contacto h1,
+.footer .direccion h1,
+.footer .rr-ss h1 {
+    color: var(--darkgray);
+    font-family: 'Poppins';
+    text-shadow: 2px 2px black;
+    font-size: 35px;
+}
+
+.footer .contacto p,
+.footer .direccion p {
+    position: relative;
+    top: 10px;
+    font-family: 'Poppins';
+    color: var(--darkgray);
+    font-size: 20px;
 }
 
 
@@ -177,18 +225,17 @@ body {
 }
 
 .container-nosotros .logo .imagen {
-    grid-column: 3/5;
+    grid-column: 4/5;
     grid-row: 1/2;
     position: relative;
-    left: 230px;
 }
 
 .container-nosotros .logo .texto {
-    grid-column: 4/7;
+    grid-column: 4/5;
     grid-row: 1/2;
     position: relative;
-    right: 150px;
     top: 20px;
+    left: 40px;
 }
 
 .container-nosotros .logo .imagen img {
@@ -248,7 +295,7 @@ body {
 .container-marcos {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7, 120px);
+    grid-template-rows: repeat(16, 120px);
 }
 
 .container-marcos .titulo {
@@ -256,13 +303,15 @@ body {
     grid-row: 1/2;
     text-align: center;
     position: relative;
-    top: 30px;
+    top: 42px;
 }
 
 .container-marcos .galeria {
     grid-column: 1/9;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    position: relative;
+    top: 30px;
 }
 
 .container-marcos .galeria .columns {
@@ -315,7 +364,7 @@ body {
 .container-molduras {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(4, 120px);
+    grid-template-rows: repeat(9, 120px);
 }
 
 .container-molduras .titulo {
@@ -323,7 +372,7 @@ body {
     grid-row: 1/2;
     text-align: center;
     position: relative;
-    top: 30px;
+    top: 42px;
 }
 
 .container-molduras .titulo h1 {
@@ -336,6 +385,8 @@ body {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    top: 20px;
 }
 
 .container-molduras .galeria .columns {
@@ -400,7 +451,7 @@ body {
 .container-trabajos {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7, 100px);
+    grid-template-rows: repeat(13, 100px);
 }
 
 .container-trabajos .titulo {
@@ -717,7 +768,7 @@ body {
 .container-taller {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(5, 100px);
+    grid-template-rows: repeat(20, 98px);
 }
 
 .container-taller .titulo {
@@ -926,3 +977,6 @@ body {
     border-radius: 50px;
     border: 2px solid black;
 }
+
+
+
